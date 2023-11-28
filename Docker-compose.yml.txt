@@ -1,0 +1,13 @@
+Docker-compose.yml
+version: "2.5"
+services:
+        ubuntuimage:
+                   container_name: mycontainer
+                   build:
+                         context: .
+                         dockerfile: dockerfile
+dockerfile
+FROM ubuntu
+RUN apt update
+CMD ["echo", "Mohammad Umer"]
+
